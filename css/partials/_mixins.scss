@@ -1,0 +1,114 @@
+// _mixins.scss
+
+@mixin bp($point) {
+  @if $point == xxlarge {
+   @media only screen and (min-width: 120.063em) { @content; }
+  }
+  @else if $point == xlarge {
+   @media only screen and (min-width: 90.063em) { @content; }
+  }
+  @else if $point == large {
+   @media only screen and (min-width: 64.063em) { @content; }
+  }
+  @else if $point == medium {
+    @media only screen and (min-width: 40.063em) { @content; }
+  }
+   @else if $point == horiz {
+    @media only screen and (min-width: 48.000em) and (max-width: 64.000em) and (orientation : landscape) { @content; }
+  }
+   @else if $point == vert {
+    @media only screen and (min-width: 48.000em) and (max-width: 64.000em) and (orientation : portrait) { @content; }
+  }
+  @else if $point == small {
+   @media only screen and (max-width: 40em)  { @content; }
+  }
+}
+
+@mixin home-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+@mixin about-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+@mixin work-bg {
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 100%;
+}
+
+@mixin border($color) {
+  @if $color == 1 {
+   border-bottom: solid $orange2 12px;
+  }
+  @else if $color == 2 {
+   border-bottom: solid $offwhite 12px;
+  }
+  @else if $color == 3 {
+   border-bottom: solid $white 12px;
+  }
+  @else if $color == 4 {
+   border-bottom: solid $pink1 12px;
+  }
+  @else if $color == 5 {
+   border-bottom: solid $orange5 12px;
+  }
+	
+}
+
+@mixin button($color) {
+  @if $color == 1 {
+		border-top: solid $orange1 4px;
+		display: inline-block;
+		padding-top: 5px;
+		
+		.button {
+			background-color: $darkblue1;
+			font-family: $aaux;
+			color: $white;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 10px 20px;
+		}
+  }
+  @else if $color == 2 {
+		border-top: solid $darkblue1 4px;
+		display: inline-block;
+		padding-top: 5px;
+		
+		.button {
+			background-color: $offwhite;
+			font-family: $aaux;
+			color: $orange1;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 10px 20px;
+		}
+  }
+  @else if $color == 3 {
+		border-top: solid $orange1 4px;
+		display: inline-block;
+		padding-top: 5px;
+		
+		.button {
+			background-color: $offwhite;
+			font-family: $aaux;
+			color: $darkblue1;
+			font-weight: bold;
+			font-size: 14px;
+			text-transform: uppercase;
+			padding: 10px 20px;
+		}
+  }
+	
+}

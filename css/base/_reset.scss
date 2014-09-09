@@ -1,0 +1,45 @@
+p {
+	font-family: $adelle3;
+	color: $gray;
+	font-size: 14px;
+}
+
+iframe {
+	padding: 0;
+	margin: 0;
+	@include bp(small) {
+	    width: 320px;
+	}
+	@include bp(vert) {
+	    width: 768px;
+	}
+	@include bp(horiz) {
+	    width: 1024px;
+	}
+	@include bp(large) {
+	    width: 100%;
+	}
+}
+
+/*
+.pt-campaign {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	@include bp(small) {
+	    width: 91.5%;
+	}
+	@include bp(medium) {
+	    width: 93%;
+	}
+	@include bp(vert) {
+	    width: 96%;
+	}
+	@include bp(horiz) {
+	    width: 98%;
+	}
+	@include bp(large) {
+	    width: 100% ;
+	}
+}
+*/

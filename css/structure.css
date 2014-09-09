@@ -1,0 +1,479 @@
+.main-title {
+  font-family: "aaux-next", sans-serif;
+  font-weight: 900;
+  font-size: 79px;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  line-height: 80px;
+  margin-top: 0; }
+
+.home-copy {
+  font-family: "aaux-next", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 21px; }
+
+.copy {
+  font-family: "aaux-next", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 21px; }
+
+.lined-button {
+  border-top: solid #c8643d 4px;
+  display: inline-block;
+  padding-top: 5px; }
+  .lined-button .button {
+    background-color: #283a50;
+    font-family: "aaux-next", sans-serif;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 20px; }
+
+.header {
+  position: fixed;
+  z-index: 99999; }
+  .header a {
+    color: #e9e4dd;
+    font-family: "aaux-next", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-align: center; }
+    .header a:hover {
+      color: #ffffff; }
+
+nav.naver {
+  background: #c8643d;
+  display: none; }
+
+nav a {
+  display: block; }
+
+.sm-logo {
+  position: fixed;
+  left: 0; }
+
+.nav-icon {
+  position: fixed;
+  right: 0; }
+
+.home {
+  text-align: center; }
+  .home .intro-home {
+    background-image: url(../images/home-bg-1.jpg);
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #cd8663 12px; }
+    .home .intro-home .main-title {
+      color: #ffffff; }
+    .home .intro-home .intro-subtitle {
+      font-family: "aaux-next", sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase; }
+      .home .intro-home .intro-subtitle span {
+        font-family: 'grand_hotelregular', sans-serif;
+        text-transform: lowercase;
+        font-weight: normal;
+        letter-spacing: 3px;
+        font-size: 20px; }
+  .home .about-home {
+    background-image: url(../images/home-bg-2.jpg);
+    color: #283a50;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #e9e4dd 12px; }
+    .home .about-home .main-title {
+      color: #283a50; }
+    .home .about-home .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      color: #c8643d; }
+    .home .about-home .home-copy {
+      color: #283a50; }
+    .home .about-home .lined-button {
+      border-top: solid #c8643d 4px;
+      display: inline-block;
+      padding-top: 5px; }
+      .home .about-home .lined-button .button {
+        background-color: #283a50;
+        font-family: "aaux-next", sans-serif;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px; }
+  .home .what-we-do-home {
+    background-image: url(../images/home-bg-3.jpg);
+    color: #e9e4dd;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #e9e4dd 12px; }
+    .home .what-we-do-home .main-title {
+      color: #283a50;
+      text-shadow: 4px 4px 0px #e9e4dd; }
+    .home .what-we-do-home .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      color: #e9e4dd; }
+    .home .what-we-do-home .things h3 {
+      color: #ffffff;
+      font-size: 18px;
+      font-family: "aaux-next", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase; }
+    .home .what-we-do-home .things img {
+      margin-bottom: 10px; }
+    .home .what-we-do-home .things .home-copy {
+      color: #e9e4dd; }
+    .home .what-we-do-home .lined-button {
+      border-top: solid #283a50 4px;
+      display: inline-block;
+      padding-top: 5px; }
+      .home .what-we-do-home .lined-button .button {
+        background-color: #e9e4dd;
+        font-family: "aaux-next", sans-serif;
+        color: #c8643d;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px; }
+  .home .work-home {
+    background-color: #283a50;
+    color: #e9e4dd;
+    background-position: center center;
+    border-bottom: solid #ffffff 12px; }
+    .home .work-home .main-title {
+      color: #e9e4dd;
+      border-bottom: solid #c8643d 4px;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+      display: inline-block; }
+      .home .work-home .main-title span {
+        color: #c8643d;
+        font-family: 'grand_hotelregular', sans-serif;
+        font-size: 68px;
+        text-transform: capitalize;
+        font-weight: normal;
+        display: block;
+        line-height: 45px; }
+    .home .work-home .home-copy {
+      color: #e9e4dd; }
+    .home .work-home .lined-button {
+      border-top: solid #c8643d 4px;
+      display: inline-block;
+      padding-top: 5px; }
+      .home .work-home .lined-button .button {
+        background-color: #e9e4dd;
+        font-family: "aaux-next", sans-serif;
+        color: #283a50;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px; }
+  .home .contact-home {
+    background-color: #e9e4dd;
+    color: #283a50;
+    border-bottom: solid #ffffff 12px; }
+    .home .contact-home .main-title {
+      color: #283a50;
+      text-shadow: 4px 4px 0px #e9e4dd; }
+    .home .contact-home .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      color: #c8643d; }
+    .home .contact-home .form-home form .name-field input, .home .contact-home .form-home form .name-field textarea {
+      color: #283a50;
+      font-family: "aaux-next", sans-serif;
+      text-transform: uppercase;
+      font-size: 17px;
+      background: none;
+      border: solid #283a50 3px;
+      font-weight: 900;
+      padding: 20px; }
+      .home .contact-home .form-home form .name-field input::-webkit-input-placeholder, .home .contact-home .form-home form .name-field textarea::-webkit-input-placeholder {
+        color: #283a50; }
+      .home .contact-home .form-home form .name-field input:-moz-placeholder, .home .contact-home .form-home form .name-field textarea:-moz-placeholder {
+        /* Firefox 18- */
+        color: #283a50; }
+      .home .contact-home .form-home form .name-field input::-moz-placeholder, .home .contact-home .form-home form .name-field textarea::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #283a50; }
+      .home .contact-home .form-home form .name-field input:-ms-input-placeholder, .home .contact-home .form-home form .name-field textarea:-ms-input-placeholder {
+        color: #283a50; }
+    .home .contact-home .form-home form .name-field textarea {
+      height: 140px; }
+    .home .contact-home .form-home .lined-button {
+      border-top: solid #c8643d 4px;
+      display: inline-block;
+      padding-top: 5px;
+      margin-top: 25px; }
+      .home .contact-home .form-home .lined-button .button {
+        background-color: #283a50;
+        font-family: "aaux-next", sans-serif;
+        color: #ffffff;
+        font-weight: bold;
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 20px; }
+  .home .social-home {
+    background-color: #c8643d;
+    color: #e9e4dd;
+    border-bottom: solid #ffffff 12px; }
+  .home .bottom-home {
+    border-bottom: solid #ffffff 12px; }
+    .home .bottom-home .map-home {
+      border-bottom: solid #ffffff 12px; }
+      .home .bottom-home .map-home img {
+        width: 100%; }
+    .home .bottom-home .details-home {
+      background-color: #c8643d;
+      color: #ffffff;
+      border-bottom: solid #ffffff 12px;
+      padding: 30px 0px; }
+      .home .bottom-home .details-home h2 {
+        color: #dfc4b7;
+        font-family: 'grand_hotelregular', sans-serif;
+        font-size: 32px;
+        margin-bottom: 0; }
+      .home .bottom-home .details-home p {
+        color: #ffffff;
+        font-family: "aaux-next", sans-serif;
+        font-size: 17px;
+        margin-bottom: 0;
+        font-weight: bold;
+        letter-spacing: 1px; }
+
+.about {
+  text-align: center; }
+  .about .intro-about {
+    background-image: url(../images/about-bg-1.jpg);
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #9c5a67 12px; }
+    .about .intro-about .main-title {
+      color: #ffffff; }
+    .about .intro-about .intro-subtitle {
+      font-family: "aaux-next", sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase; }
+      .about .intro-about .intro-subtitle span {
+        font-family: 'grand_hotelregular', sans-serif;
+        text-transform: lowercase;
+        font-weight: normal;
+        letter-spacing: 3px;
+        font-size: 20px; }
+  .about .mission-about {
+    background-image: url(../images/about-bg-2.jpg);
+    color: #4a4151;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #ffffff 12px; }
+    .about .mission-about .main-title {
+      color: #c7633c; }
+    .about .mission-about .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      color: #4a4151; }
+    .about .mission-about .copy {
+      color: #4a4151; }
+  .about .the-crew-about {
+    background-color: #ca9a94;
+    color: #4a4151;
+    background-position: bottom center;
+    border-bottom: solid #ffffff 12px; }
+    .about .the-crew-about .crew-title {
+      margin: 0; }
+    .about .the-crew-about .main-title {
+      color: #594a5b;
+      text-shadow: 4px 4px 0px #e9e3dd;
+      border-bottom: solid #e9e3dd 4px;
+      padding-bottom: 10px;
+      width: 390px;
+      margin: 40px auto; }
+    .about .the-crew-about .large-block-grid-5 {
+      border-bottom: solid #ffffff 12px;
+      border-top: solid #ffffff 12px; }
+      .about .the-crew-about .large-block-grid-5 li {
+        padding: 0 !important;
+        position: relative; }
+        .about .the-crew-about .large-block-grid-5 li span.crew-info {
+          margin: 0 auto;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          background-color: #ffffff; }
+          .about .the-crew-about .large-block-grid-5 li span.crew-info h1 {
+            font-family: "futura-pt", sans-serif;
+            font-weight: bolder;
+            font-size: 17px;
+            color: #58595b;
+            margin: 13px 0 0 0; }
+          .about .the-crew-about .large-block-grid-5 li span.crew-info p {
+            font-family: "futura-pt", sans-serif;
+            font-weight: normal;
+            font-size: 12px;
+            color: #919396; }
+        .about .the-crew-about .large-block-grid-5 li img {
+          border: 5px solid #ffffff; }
+
+.work {
+  text-align: center; }
+  .work .intro-work {
+    background-image: url(../images/works-bg-1.jpg);
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #cd9274 12px; }
+    .work .intro-work .main-title {
+      color: #ffffff; }
+    .work .intro-work .intro-subtitle {
+      font-family: "aaux-next", sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase; }
+      .work .intro-work .intro-subtitle span {
+        font-family: 'grand_hotelregular', sans-serif;
+        text-transform: lowercase;
+        font-weight: normal;
+        letter-spacing: 3px;
+        font-size: 20px; }
+  .work .our-clients-work {
+    background-color: #e9e4dd;
+    color: #a4a7aa;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #ffffff 12px; }
+    .work .our-clients-work .main-title {
+      color: #615369; }
+    .work .our-clients-work .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      font-size: 30px;
+      color: #9c5a67; }
+    .work .our-clients-work .clients-grid {
+      margin: 0; }
+      .work .our-clients-work .clients-grid ul li {
+        border-left: 1px solid #a4a7aa;
+        border-right: 1px solid #a4a7aa;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; }
+        .work .our-clients-work .clients-grid ul li:first-child {
+          border-left: none; }
+        .work .our-clients-work .clients-grid ul li:last-child {
+          border-right: none; }
+      .work .our-clients-work .clients-grid .top {
+        border-bottom: 1px solid #a4a7aa;
+        margin-bottom: 20px;
+        padding-bottom: 20px; }
+      .work .our-clients-work .clients-grid .bottom {
+        margin: 0; }
+  .work .portfolio-work {
+    background-color: #4a4151;
+    color: #e9e4dd;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #ffffff 12px; }
+    .work .portfolio-work .main-title {
+      color: #e9e4dd;
+      border-bottom: solid #cc9a92 4px;
+      padding-bottom: 10px;
+      width: 395px;
+      margin: 40px auto; }
+    .work .portfolio-work .tabs {
+      margin: 0px; }
+      .work .portfolio-work .tabs .tab-title {
+        margin: 0; }
+        .work .portfolio-work .tabs .tab-title a {
+          margin: 0; }
+          .work .portfolio-work .tabs .tab-title a span {
+            display: block; }
+          .work .portfolio-work .tabs .tab-title a .project-title {
+            margin: 0; }
+          .work .portfolio-work .tabs .tab-title a .project-desc {
+            margin: 0; }
+    .work .portfolio-work .tabs-content {
+      margin: 0; }
+      .work .portfolio-work .tabs-content .content {
+        margin: 0; }
+        .work .portfolio-work .tabs-content .content p {
+          margin: 0; }
+    .work .portfolio-work .view-port {
+      width: 960px;
+      overflow: hidden;
+      position: relative; }
+    .work .portfolio-work .slider-container {
+      position: relative;
+      height: 138px;
+      margin: 0;
+      padding: 0; }
+    .work .portfolio-work .item {
+      position: absolute;
+      width: 234px;
+      height: 138px;
+      margin-right: 8px; }
+    .work .portfolio-work .work-slider a.prev, .work .portfolio-work .work-slider a.next {
+      display: block;
+      position: absolute;
+      top: 50%;
+      margin-top: -32px;
+      width: 64px;
+      height: 64px;
+      background: url("../images/arrows.png");
+      background-repeat: no-repeat; }
+    .work .portfolio-work .work-slider a.prev.disabled, .work .portfolio-work .work-slider a.next.disabled {
+      display: none; }
+    .work .portfolio-work .work-slider a.prev {
+      left: 0;
+      background-position: 0 0; }
+    .work .portfolio-work .work-slider a.prev:hover {
+      background-position: 0 -66px; }
+    .work .portfolio-work .work-slider a.prev:active {
+      background-position: 0 -132px; }
+    .work .portfolio-work .work-slider a.next {
+      right: 0;
+      background-position: -64px 0; }
+    .work .portfolio-work .work-slider a.next:hover {
+      background-position: -64px -132px; }
+    .work .portfolio-work .work-slider a.next:active {
+      background-position: -64px -198px; }

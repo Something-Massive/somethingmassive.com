@@ -1,0 +1,105 @@
+.about {
+	text-align: center;
+
+	.intro-about {
+		background-image: url(../images/about-bg-1.jpg);
+		color: $white;
+		background-position: center center;
+		@include about-bg;
+		@include border(4);
+		
+		.main-title {
+			color: $white;
+		}
+		
+		.intro-subtitle {
+			font-family: $aaux;
+			font-weight: 900;
+			font-size: 13px;
+			letter-spacing: 5px;
+			text-transform: uppercase;
+			
+			span {
+				font-family: $grand;
+				text-transform: lowercase;
+				font-weight: normal;
+				letter-spacing: 3px;
+				font-size: 20px;
+			}
+		}
+	}
+	
+	.mission-about {
+		background-image: url(../images/about-bg-2.jpg);
+		color: $purple1;
+		background-position: bottom center;
+		@include about-bg;
+		@include border(3);
+		
+		.main-title {
+			color: $orange4;
+		}
+		
+		.subtitle {
+			font-family: $grand;
+			font-weight: normal;
+			font-size: 30px;
+			color: $purple1;
+		}
+		
+		.copy {
+			color: $purple1;
+		}
+		
+	}
+	.the-crew-about {
+		background-color: $pink2;
+		color: $purple1;
+		background-position: bottom center;
+		@include border(3);
+		
+		.crew-title {
+			margin: 0;
+		}
+		
+		.main-title {
+			color: $purple2;
+			text-shadow: 4px 4px 0px $offwhite2;
+			border-bottom: solid $offwhite2 4px;
+			padding-bottom: 10px;
+			width: 390px;
+			margin: 40px auto;
+		}
+		.large-block-grid-5 {
+			border-bottom: solid $white 12px;
+			border-top: solid $white 12px;
+			li {
+				padding: 0 !important;
+				position: relative;
+				span.crew-info {
+					margin: 0 auto;
+					position: absolute;
+					bottom: 0;
+					width: 100%;
+					background-color: $white;
+					h1 {
+						font-family: $futura;
+						font-weight: bolder;
+						font-size: 17px;
+						color: $gray1;
+						margin: 13px 0 0 0;
+					}
+					p {
+						font-family: $futura;
+						font-weight: normal;
+						font-size: 12px;
+						color: $gray2;
+					}
+				}
+				img {
+					border: 5px solid $white;
+				}
+			}
+		}
+	}
+}	
