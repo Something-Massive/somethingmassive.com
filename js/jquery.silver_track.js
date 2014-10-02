@@ -22,7 +22,7 @@
   };
 
   $.fn.silverTrack.options = {
-    perPage: 4,
+    perPage: 1,
     itemClass: "item",
     mode: "horizontal",
     autoHeight: false,

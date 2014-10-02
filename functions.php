@@ -6,6 +6,50 @@ just edit things like thumbnail sizes, header images,
 sidebars, comments, ect.
 */
 
+// Register Custom Post Type
+function work_section() {
+
+	$labels = array(
+		'name'                => _x( 'Projects', 'Post Type General Name', 'text_domain' ),
+		'singular_name'       => _x( 'Project', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'           => __( 'Work', 'text_domain' ),
+		'parent_item_colon'   => __( 'Parent Project:', 'text_domain' ),
+		'all_items'           => __( 'All Projects', 'text_domain' ),
+		'view_item'           => __( 'View Project', 'text_domain' ),
+		'add_new_item'        => __( 'Add New Project', 'text_domain' ),
+		'add_new'             => __( 'Add Project', 'text_domain' ),
+		'edit_item'           => __( 'Edit Project', 'text_domain' ),
+		'update_item'         => __( 'Update Project', 'text_domain' ),
+		'search_items'        => __( 'Search Projects', 'text_domain' ),
+		'not_found'           => __( 'Not found', 'text_domain' ),
+		'not_found_in_trash'  => __( 'Not found in Trash', 'text_domain' ),
+	);
+	$args = array(
+		'label'               => __( 'work', 'text_domain' ),
+		'description'         => __( 'Post Type Description', 'text_domain' ),
+		'labels'              => $labels,
+		'supports'            => array( 'title', 'editor', 'excerpt', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes', ),
+		'taxonomies'          => array( 'category', 'post_tag' ),
+		'hierarchical'        => false,
+		'public'              => true,
+		'show_ui'             => true,
+		'show_in_menu'        => true,
+		'show_in_nav_menus'   => true,
+		'show_in_admin_bar'   => true,
+		'menu_position'       => 5,
+		'can_export'          => true,
+		'has_archive'         => true,
+		'exclude_from_search' => false,
+		'publicly_queryable'  => true,
+		'capability_type'     => 'page',
+	);
+	register_post_type( 'work', $args );
+
+}
+
+// Hook into the 'init' action
+add_action( 'init', 'work_section', 0 );
+
 /*********************
 INCLUDE NEEDED FILES
 *********************/
@@ -32,6 +76,10 @@ library/custom-post-type.php
 */
 require_once('library/custom-post-type.php'); // you can disable this if you like
 require_once('library/custom-post-type-accordion.php'); // you can disable this if you like
+
+include_once('acf-options-page/acf-options-page.php');
+include_once('acf-repeater/acf-repeater.php');
+
 /*
 library/admin.php
 	- removing some default WordPress dashboard widgets

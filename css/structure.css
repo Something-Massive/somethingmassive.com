@@ -1,25 +1,81 @@
 .main-title {
   font-family: "aaux-next", sans-serif;
   font-weight: 900;
-  font-size: 79px;
   margin-bottom: 0;
   text-transform: uppercase;
-  line-height: 80px;
   margin-top: 0; }
+  @media only screen and (max-width: 40em) {
+    .main-title {
+      font-size: 40px;
+      line-height: 50px; } }
+  @media only screen and (min-width: 40.063em) {
+    .main-title {
+      font-size: 40px;
+      line-height: 50px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+    .main-title {
+      font-size: 79px;
+      line-height: 80px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+    .main-title {
+      font-size: 79px;
+      line-height: 80px; } }
+  @media only screen and (min-width: 64.063em) {
+    .main-title {
+      font-size: 79px;
+      line-height: 80px; } }
+  @media only screen and (min-width: 120.063em) {
+    .main-title {
+      font-size: 100px;
+      line-height: 80px; } }
 
 .home-copy {
   font-family: "aaux-next", sans-serif;
-  font-size: 15px;
   font-weight: bold;
-  text-align: center;
-  line-height: 21px; }
+  text-align: center; }
+  @media only screen and (max-width: 40em) {
+    .home-copy {
+      margin-bottom: 10px; } }
+  @media only screen and (min-width: 64.063em) {
+    .home-copy {
+      font-size: 15px;
+      line-height: 21px;
+      margin-bottom: 2rem; } }
+  @media only screen and (min-width: 90.063em) {
+    .home-copy {
+      font-size: 18px;
+      line-height: 28px; } }
+  @media only screen and (min-width: 120.063em) {
+    .home-copy {
+      font-size: 20px;
+      line-height: 30px; } }
 
 .copy {
   font-family: "aaux-next", sans-serif;
-  font-size: 15px;
   font-weight: bold;
-  text-align: center;
-  line-height: 21px; }
+  text-align: center; }
+  @media only screen and (min-width: 64.063em) {
+    .copy {
+      font-size: 15px;
+      line-height: 21px; } }
+  @media only screen and (min-width: 90.063em) {
+    .copy {
+      font-size: 18px;
+      line-height: 28px; } }
+  @media only screen and (min-width: 120.063em) {
+    .copy {
+      font-size: 20px;
+      line-height: 30px; } }
+
+@media only screen and (max-width: 40em) {
+  p {
+    font-size: 13px; } }
+@media only screen and (min-width: 40.063em) {
+  p {
+    font-size: 13px; } }
+@media only screen and (min-width: 64.063em) {
+  p {
+    font-size: 1rem; } }
 
 .lined-button {
   border-top: solid #c8643d 4px;
@@ -37,19 +93,58 @@
 .header {
   position: fixed;
   z-index: 99999; }
+  .header #inner-header li {
+    padding: 0; }
+    @media only screen and (max-width: 40em) {
+      .header #inner-header li {
+        padding-bottom: 15px; } }
+    @media only screen and (min-width: 40.063em) {
+      .header #inner-header li {
+        padding-bottom: 15px; } }
   .header a {
     color: #e9e4dd;
     font-family: "aaux-next", sans-serif;
     font-weight: 900;
-    font-size: 40px;
     text-transform: uppercase;
     text-align: center; }
+    @media only screen and (max-width: 40em) {
+      .header a {
+        font-size: 20px; } }
+    @media only screen and (min-width: 40.063em) {
+      .header a {
+        font-size: 20px; } }
+    @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+      .header a {
+        font-size: 25px; } }
+    @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+      .header a {
+        font-size: 25px; } }
+    @media only screen and (min-width: 64.063em) {
+      .header a {
+        font-size: 40px; } }
     .header a:hover {
       color: #ffffff; }
+    @media only screen and (max-width: 40em) {
+      .header a img {
+        width: 55px; } }
+    @media only screen and (min-width: 40.063em) {
+      .header a img {
+        width: 55px; } }
+    @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+      .header a img {
+        width: 55px; } }
+    @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+      .header a img {
+        width: 55px; } }
+    @media only screen and (min-width: 64.063em) {
+      .header a img {
+        width: 103px; } }
 
 nav.naver {
   background: #c8643d;
   display: none; }
+  nav.naver ul {
+    margin-left: 0; }
 
 nav a {
   display: block; }
@@ -61,6 +156,122 @@ nav a {
 .nav-icon {
   position: fixed;
   right: 0; }
+  @media only screen and (max-width: 40em) {
+    .nav-icon img {
+      width: 70px; } }
+  @media only screen and (min-width: 40.063em) {
+    .nav-icon img {
+      width: 70px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: landscape) {
+    .nav-icon img {
+      width: 70px; } }
+  @media only screen and (min-width: 48em) and (max-width: 64em) and (orientation: portrait) {
+    .nav-icon img {
+      width: 70px; } }
+  @media only screen and (min-width: 64.063em) {
+    .nav-icon img {
+      width: 103px; } }
+
+.scroll-container {
+  position: absolute;
+  width: 100%;
+  bottom: 30px;
+  height: 50px; }
+  .scroll-container .scroll-btn {
+    display: block; }
+    .scroll-container .scroll-btn img {
+      width: 42px; }
+
+ul.social-header {
+  display: block;
+  text-align: center; }
+  ul.social-header li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 5px; }
+    ul.social-header li a {
+      margin: auto; }
+      ul.social-header li a img {
+        width: auto;
+        padding: 0px 10px; }
+        @media only screen and (max-width: 40em) {
+          ul.social-header li a img {
+            height: 25px; } }
+        @media only screen and (min-width: 40.063em) {
+          ul.social-header li a img {
+            height: 25px; } }
+        @media only screen and (min-width: 64.063em) {
+          ul.social-header li a img {
+            height: 40px; } }
+
+.left-line, .right-line {
+  height: 1px;
+  display: inline-block;
+  position: relative;
+  top: -7px; }
+  @media only screen and (max-width: 40em) {
+    .left-line, .right-line {
+      width: 20px; } }
+  @media only screen and (min-width: 40.063em) {
+    .left-line, .right-line {
+      width: 50px; } }
+  @media only screen and (min-width: 64.063em) {
+    .left-line, .right-line {
+      width: 50px; } }
+
+.left-line {
+  left: -15px; }
+
+.right-line {
+  right: -15px; }
+
+.vert-align {
+  padding: 50px 0; }
+
+.footer {
+  padding: 30px 0px !important;
+  margin: 0 !important;
+  text-align: center !important; }
+  .footer ul {
+    margin: 0;
+    line-height: 12px; }
+  .footer ul.sub-nav {
+    display: inline-block; }
+    .footer ul.sub-nav li {
+      float: none;
+      margin: 0; }
+      .footer ul.sub-nav li a {
+        margin: auto;
+        font-family: "aaux-next", sans-serif;
+        color: #e9e4dd;
+        font-size: 12px;
+        font-weight: bold;
+        text-transform: uppercase;
+        cursor: pointer; }
+        @media only screen and (max-width: 40em) {
+          .footer ul.sub-nav li a {
+            padding: 0px 5px; } }
+        @media only screen and (min-width: 40.063em) {
+          .footer ul.sub-nav li a {
+            padding: 0.1875rem 1rem; } }
+    .footer ul.sub-nav li.active a {
+      background: none; }
+  .footer ul.social-footer {
+    display: inline-block; }
+    @media only screen and (max-width: 40em) {
+      .footer ul.social-footer {
+        margin-top: 20px; } }
+    @media only screen and (min-width: 40.063em) {
+      .footer ul.social-footer {
+        margin: 0; } }
+    .footer ul.social-footer li {
+      list-style: none;
+      display: inline;
+      margin-left: 5px; }
+      .footer ul.social-footer li a {
+        margin: auto; }
+        .footer ul.social-footer li a img {
+          height: 18px; }
 
 .home {
   text-align: center; }
@@ -72,7 +283,8 @@ nav a {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    border-bottom: solid #cd8663 12px; }
+    border-bottom: solid #cd8663 12px;
+    position: relative; }
     .home .intro-home .main-title {
       color: #ffffff; }
     .home .intro-home .intro-subtitle {
@@ -101,24 +313,33 @@ nav a {
     .home .about-home .subtitle {
       font-family: 'grand_hotelregular', sans-serif;
       font-weight: normal;
-      font-size: 30px;
       color: #c8643d; }
+      @media only screen and (max-width: 40em) {
+        .home .about-home .subtitle {
+          font-size: 20px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .home .about-home .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .home .about-home .subtitle .left-line, .home .about-home .subtitle .right-line {
+        border-bottom: 3px solid #c8643d; }
     .home .about-home .home-copy {
       color: #283a50; }
     .home .about-home .lined-button {
       border-top: solid #c8643d 4px;
       display: inline-block;
       padding-top: 5px; }
-      .home .about-home .lined-button .button {
+      .home .about-home .lined-button .button, .home .about-home .lined-button input {
         background-color: #283a50;
         font-family: "aaux-next", sans-serif;
         color: #ffffff;
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        width: 100%; }
   .home .what-we-do-home {
-    background-image: url(../images/home-bg-3.jpg);
     color: #e9e4dd;
     background-position: center center;
     background-size: cover;
@@ -126,20 +347,51 @@ nav a {
     height: 100%;
     width: 100%;
     border-bottom: solid #e9e4dd 12px; }
+    @media only screen and (max-width: 40em) {
+      .home .what-we-do-home {
+        background: #c8643d; } }
+    @media only screen and (min-width: 40.063em) {
+      .home .what-we-do-home {
+        background-image: url(../images/home-bg-3.jpg); } }
     .home .what-we-do-home .main-title {
       color: #283a50;
       text-shadow: 4px 4px 0px #e9e4dd; }
     .home .what-we-do-home .subtitle {
       font-family: 'grand_hotelregular', sans-serif;
       font-weight: normal;
-      font-size: 30px;
       color: #e9e4dd; }
+      @media only screen and (max-width: 40em) {
+        .home .what-we-do-home .subtitle {
+          font-size: 20px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .home .what-we-do-home .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .home .what-we-do-home .subtitle .left-line, .home .what-we-do-home .subtitle .right-line {
+        border-bottom: 3px solid #e9e4dd; }
+    .home .what-we-do-home .things .col_1 {
+      margin: 0; }
+    .home .what-we-do-home .things .col_2 {
+      margin: 0; }
+      @media only screen and (max-width: 40em) {
+        .home .what-we-do-home .things .col_2 {
+          border: none; } }
+      @media only screen and (min-width: 40.063em) {
+        .home .what-we-do-home .things .col_2 {
+          border-left: 2px solid #ffffff;
+          border-right: 2px solid #ffffff; } }
+    .home .what-we-do-home .things .col_3 {
+      margin: 0; }
+    .home .what-we-do-home .things .col_1, .home .what-we-do-home .things .col_2, .home .what-we-do-home .things .col_3 {
+      padding: 0px 27px; }
     .home .what-we-do-home .things h3 {
-      color: #ffffff;
-      font-size: 18px;
+      color: #283a50;
+      font-size: 22px;
       font-family: "aaux-next", sans-serif;
       font-weight: bold;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      padding-top: 15px; }
     .home .what-we-do-home .things img {
       margin-bottom: 10px; }
     .home .what-we-do-home .things .home-copy {
@@ -148,18 +400,23 @@ nav a {
       border-top: solid #283a50 4px;
       display: inline-block;
       padding-top: 5px; }
-      .home .what-we-do-home .lined-button .button {
+      .home .what-we-do-home .lined-button .button, .home .what-we-do-home .lined-button input {
         background-color: #e9e4dd;
         font-family: "aaux-next", sans-serif;
         color: #c8643d;
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        width: 100%; }
   .home .work-home {
     background-color: #283a50;
     color: #e9e4dd;
     background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
     border-bottom: solid #ffffff 12px; }
     .home .work-home .main-title {
       color: #e9e4dd;
@@ -181,26 +438,38 @@ nav a {
       border-top: solid #c8643d 4px;
       display: inline-block;
       padding-top: 5px; }
-      .home .work-home .lined-button .button {
+      .home .work-home .lined-button .button, .home .work-home .lined-button input {
         background-color: #e9e4dd;
         font-family: "aaux-next", sans-serif;
         color: #283a50;
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        width: 100%; }
   .home .contact-home {
     background-color: #e9e4dd;
     color: #283a50;
     border-bottom: solid #ffffff 12px; }
+    .home .contact-home .vert-align {
+      padding-bottom: 0px; }
     .home .contact-home .main-title {
       color: #283a50;
       text-shadow: 4px 4px 0px #e9e4dd; }
     .home .contact-home .subtitle {
       font-family: 'grand_hotelregular', sans-serif;
       font-weight: normal;
-      font-size: 30px;
       color: #c8643d; }
+      @media only screen and (max-width: 40em) {
+        .home .contact-home .subtitle {
+          font-size: 20px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .home .contact-home .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .home .contact-home .subtitle .left-line, .home .contact-home .subtitle .right-line {
+        border-bottom: 3px solid #c8643d; }
     .home .contact-home .form-home form .name-field input, .home .contact-home .form-home form .name-field textarea {
       color: #283a50;
       font-family: "aaux-next", sans-serif;
@@ -227,41 +496,52 @@ nav a {
       display: inline-block;
       padding-top: 5px;
       margin-top: 25px; }
-      .home .contact-home .form-home .lined-button .button {
+      .home .contact-home .form-home .lined-button .button, .home .contact-home .form-home .lined-button input {
         background-color: #283a50;
         font-family: "aaux-next", sans-serif;
         color: #ffffff;
         font-weight: bold;
         font-size: 14px;
         text-transform: uppercase;
-        padding: 10px 20px; }
+        padding: 10px 20px;
+        width: 100%; }
   .home .social-home {
     background-color: #c8643d;
     color: #e9e4dd;
     border-bottom: solid #ffffff 12px; }
-  .home .bottom-home {
+  .home .bottom-home .map-home {
     border-bottom: solid #ffffff 12px; }
-    .home .bottom-home .map-home {
-      border-bottom: solid #ffffff 12px; }
-      .home .bottom-home .map-home img {
-        width: 100%; }
-    .home .bottom-home .details-home {
-      background-color: #c8643d;
+    .home .bottom-home .map-home img {
+      width: 100%; }
+  .home .bottom-home .details-home {
+    background-color: #c8643d;
+    color: #ffffff;
+    border-bottom: solid #ffffff 12px;
+    padding: 30px 0px;
+    float: left;
+    width: 100%; }
+    .home .bottom-home .details-home img {
+      width: 42px; }
+    .home .bottom-home .details-home h2 {
+      color: #dfc4b7;
+      font-family: 'grand_hotelregular', sans-serif;
+      font-size: 32px;
+      margin-bottom: 0; }
+    .home .bottom-home .details-home p {
       color: #ffffff;
-      border-bottom: solid #ffffff 12px;
-      padding: 30px 0px; }
-      .home .bottom-home .details-home h2 {
-        color: #dfc4b7;
-        font-family: 'grand_hotelregular', sans-serif;
-        font-size: 32px;
-        margin-bottom: 0; }
-      .home .bottom-home .details-home p {
-        color: #ffffff;
-        font-family: "aaux-next", sans-serif;
-        font-size: 17px;
-        margin-bottom: 0;
-        font-weight: bold;
-        letter-spacing: 1px; }
+      font-family: "aaux-next", sans-serif;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px; }
+      @media only screen and (max-width: 40em) {
+        .home .bottom-home .details-home p {
+          margin: 20px 0; } }
+      @media only screen and (min-width: 40.063em) {
+        .home .bottom-home .details-home p {
+          margin: 0; } }
+
+.home.footer {
+  background-color: #283a50; }
 
 .about {
   text-align: center; }
@@ -273,7 +553,8 @@ nav a {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    border-bottom: solid #9c5a67 12px; }
+    border-bottom: solid #9c5a67 12px;
+    position: relative; }
     .about .intro-about .main-title {
       color: #ffffff; }
     .about .intro-about .intro-subtitle {
@@ -299,11 +580,22 @@ nav a {
     border-bottom: solid #ffffff 12px; }
     .about .mission-about .main-title {
       color: #c7633c; }
+    .about .mission-about p {
+      color: #ffffff; }
     .about .mission-about .subtitle {
       font-family: 'grand_hotelregular', sans-serif;
       font-weight: normal;
-      font-size: 30px;
       color: #4a4151; }
+      @media only screen and (max-width: 40em) {
+        .about .mission-about .subtitle {
+          font-size: 22px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .about .mission-about .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .about .mission-about .subtitle .left-line, .about .mission-about .subtitle .right-line {
+        border-bottom: 3px solid #4a4151; }
     .about .mission-about .copy {
       color: #4a4151; }
   .about .the-crew-about {
@@ -318,33 +610,35 @@ nav a {
       text-shadow: 4px 4px 0px #e9e3dd;
       border-bottom: solid #e9e3dd 4px;
       padding-bottom: 10px;
-      width: 390px;
       margin: 40px auto; }
-    .about .the-crew-about .large-block-grid-5 {
-      border-bottom: solid #ffffff 12px;
-      border-top: solid #ffffff 12px; }
-      .about .the-crew-about .large-block-grid-5 li {
+    .about .the-crew-about .large-block-grid-4 {
+      border: solid #ffffff 7px; }
+      .about .the-crew-about .large-block-grid-4 li {
         padding: 0 !important;
         position: relative; }
-        .about .the-crew-about .large-block-grid-5 li span.crew-info {
+        .about .the-crew-about .large-block-grid-4 li span.crew-info {
           margin: 0 auto;
-          position: absolute;
           bottom: 0;
           width: 100%;
+          left: 0;
+          position: absolute;
           background-color: #ffffff; }
-          .about .the-crew-about .large-block-grid-5 li span.crew-info h1 {
+          .about .the-crew-about .large-block-grid-4 li span.crew-info h1 {
             font-family: "futura-pt", sans-serif;
             font-weight: bolder;
             font-size: 17px;
             color: #58595b;
             margin: 13px 0 0 0; }
-          .about .the-crew-about .large-block-grid-5 li span.crew-info p {
+          .about .the-crew-about .large-block-grid-4 li span.crew-info p {
             font-family: "futura-pt", sans-serif;
             font-weight: normal;
             font-size: 12px;
             color: #919396; }
-        .about .the-crew-about .large-block-grid-5 li img {
+        .about .the-crew-about .large-block-grid-4 li img {
           border: 5px solid #ffffff; }
+
+.about-us.footer {
+  background-color: #9c5a67; }
 
 .work {
   text-align: center; }
@@ -356,7 +650,8 @@ nav a {
     background-repeat: no-repeat;
     height: 100%;
     width: 100%;
-    border-bottom: solid #cd9274 12px; }
+    border-bottom: solid #cd9274 12px;
+    position: relative; }
     .work .intro-work .main-title {
       color: #ffffff; }
     .work .intro-work .intro-subtitle {
@@ -425,7 +720,9 @@ nav a {
       .work .portfolio-work .tabs .tab-title {
         margin: 0; }
         .work .portfolio-work .tabs .tab-title a {
-          margin: 0; }
+          margin: 0px 10px;
+          height: 100%;
+          padding: 30% 2rem 0; }
           .work .portfolio-work .tabs .tab-title a span {
             display: block; }
           .work .portfolio-work .tabs .tab-title a .project-title {
@@ -439,18 +736,18 @@ nav a {
         .work .portfolio-work .tabs-content .content p {
           margin: 0; }
     .work .portfolio-work .view-port {
-      width: 960px;
+      width: 100%;
       overflow: hidden;
       position: relative; }
     .work .portfolio-work .slider-container {
       position: relative;
-      height: 138px;
+      height: 208px;
       margin: 0;
       padding: 0; }
     .work .portfolio-work .item {
       position: absolute;
-      width: 234px;
-      height: 138px;
+      width: 224px;
+      height: 208px;
       margin-right: 8px; }
     .work .portfolio-work .work-slider a.prev, .work .portfolio-work .work-slider a.next {
       display: block;
@@ -477,3 +774,126 @@ nav a {
       background-position: -64px -132px; }
     .work .portfolio-work .work-slider a.next:active {
       background-position: -64px -198px; }
+
+.work.footer {
+  background-color: #9c5a67; }
+
+.studio {
+  text-align: center; }
+  .studio .intro-studio {
+    background-image: url(../images/studio-bg-1.jpg);
+    color: #ffffff;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #e9e4dd 12px;
+    position: relative; }
+    .studio .intro-studio .main-title {
+      color: #ffffff; }
+    .studio .intro-studio .intro-subtitle {
+      font-family: "aaux-next", sans-serif;
+      font-weight: 900;
+      font-size: 13px;
+      letter-spacing: 5px;
+      text-transform: uppercase; }
+      .studio .intro-studio .intro-subtitle span {
+        font-family: 'grand_hotelregular', sans-serif;
+        text-transform: lowercase;
+        font-weight: normal;
+        letter-spacing: 3px;
+        font-size: 20px; }
+  .studio .massive-studio {
+    background-image: url(../images/studio-bg-2.jpg);
+    color: #4a4151;
+    background-position: bottom center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    border-bottom: solid #9c5a67 12px; }
+    .studio .massive-studio .main-title {
+      color: #ffffff; }
+    .studio .massive-studio p {
+      color: #ffffff; }
+    .studio .massive-studio .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      color: #ffffff; }
+      @media only screen and (max-width: 40em) {
+        .studio .massive-studio .subtitle {
+          font-size: 22px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .studio .massive-studio .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .studio .massive-studio .subtitle .left-line, .studio .massive-studio .subtitle .right-line {
+        border-bottom: 3px solid #ffffff; }
+    .studio .massive-studio .copy {
+      color: #ffffff; }
+  .studio .equipment {
+    margin: 0; }
+    .studio .equipment .large-block-grid-3 {
+      padding: 0;
+      margin: 0;
+      border-bottom: solid #ffffff 12px; }
+      .studio .equipment .large-block-grid-3 li {
+        padding: 0 !important;
+        margin: 0 !important; }
+        .studio .equipment .large-block-grid-3 li img {
+          margin: 0; }
+  .studio .studio-photos li.main-squares {
+    padding: 0 !important; }
+    .studio .studio-photos li.main-squares img.single-large {
+      padding: 5px !important; }
+  .studio .studio-photos .large-block-grid-2.four-images li {
+    padding: 5px !important; }
+  .studio .studio-photos .large-12 {
+    padding: 5px !important; }
+  .studio .details-studio {
+    background-color: #e9e4dd;
+    color: #4b4151;
+    border-bottom: solid #ffffff 12px;
+    padding: 30px 0px;
+    float: left;
+    width: 100%; }
+    .studio .details-studio img {
+      width: 42px; }
+    .studio .details-studio h2 {
+      color: #767c83;
+      font-family: 'grand_hotelregular', sans-serif;
+      font-size: 32px;
+      margin-bottom: 0; }
+    .studio .details-studio .main-title {
+      color: #283a50; }
+    .studio .details-studio .subtitle {
+      font-family: 'grand_hotelregular', sans-serif;
+      font-weight: normal;
+      color: #9c5a67; }
+      @media only screen and (max-width: 40em) {
+        .studio .details-studio .subtitle {
+          font-size: 22px;
+          margin-bottom: 0; } }
+      @media only screen and (min-width: 64.063em) {
+        .studio .details-studio .subtitle {
+          font-size: 30px;
+          margin-bottom: 1.25rem; } }
+      .studio .details-studio .subtitle .left-line, .studio .details-studio .subtitle .right-line {
+        border-bottom: 3px solid #9c5a67; }
+    .studio .details-studio p {
+      color: #4b4151;
+      font-family: "aaux-next", sans-serif;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: 1px; }
+      @media only screen and (max-width: 40em) {
+        .studio .details-studio p {
+          margin: 20px 0; } }
+      @media only screen and (min-width: 40.063em) {
+        .studio .details-studio p {
+          margin: 0; } }
+
+.studio.footer {
+  background-color: #283a50; }

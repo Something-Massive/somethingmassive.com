@@ -9,19 +9,22 @@
 				<p class="intro-subtitle"><span>We're</span> Something Massive</p>
 			</div>
 		</div>
+		<div class="scroll-container">
+			<span class="scroll-btn toSlide" data-index="2" id="scroll-arrow"><img src="<?php bloginfo('template_directory');?>/images/scroll_arrow.png" /></span>
+		</div>
 	</div>
 	
 <!-- About -->	
 
-	<div class="section about-home page-section">
+	<div class="section about-home page-section light">
 		<div class="row vert-align">
-			<div class="large-12 medium-12 small-12 columns">
-				<h1 class="main-title">About Us</h1>
-				<p class="subtitle">Ali-G sketch and what not</p>
+			<div class="large-12 medium-12 small-9 small-centered columns">
+				<h1 class="main-title"><?php the_field('about_us_title'); ?></h1>
+				<p class="subtitle"><span class="left-line"></span><?php the_field('about_subtitle'); ?><span class="right-line"></span></p>
 			</div>
-			<div class="large-6 large-centered medium-8 medium-centered small-12 columns">
-				<p class="home-copy">Orita consequi reseditam, si vendus eaquia digenimpe venimil ipsam, custemp oremoluptame non placcup tatquodit exereic te ist, solupta que debisque cor ab id qui berrume nimped quiati ipitati orerae ad eatusandam excepud itatur? Quiassinte netur, consequis destrunt labo. Itat.Sapitibus, cum volorende pedi te poreium doloreh enihiciam in ratiur, odipsum quam dolorae sit quiatium volut lab incia con rerum il int vit a de deles volupta quis quia aliquibus, omnimpo reprovit quoditat. Bernam nemporerum dolupti onseque laborioris eatum qui as et il inullaccus molupie nissundi berumqu idellac.</p>
-				<a class="lined-button"><span class="button">Learn More</span></a>
+			<div class="large-12 large-centered medium-10 medium-centered small-9 small-centered columns">
+				<p class="home-copy"><?php the_field('about_description'); ?></p>
+				<a class="lined-button" href="<?php the_field('about_button_link'); ?>"><span class="button"><?php the_field('about_button_text'); ?></span></a>
 			</div>
 		</div>
 	</div>
@@ -30,142 +33,149 @@
 	
 	<div class="section what-we-do-home page-section">
 		<div class="row vert-align">
-			<div class="large-12 medium-12 small-12 columns">
-				<h1 class="main-title">What We Do</h1>
-				<p class="subtitle">Stuff and things</p>
+			<div class="large-12 medium-12 small-12 small-centered columns">
+					<h1 class="main-title"><?php the_field('what_we_do_title'); ?></h1>
+				<p class="subtitle"><span class="left-line"></span><?php the_field('what_we_do_subtitle'); ?><span class="right-line"></span></p>
 			</div>
-			<div class="large-8 large-centered medium-8 medium-centered small-12 columns">
+			<div class="large-12 large-centered medium-12 medium-centered small-12 small-centered columns">
 				<div class="row things">
-					<div class="large-4 medium-4 small-12 columns">
-						<h3>Thing 1</h3>
-						<img src="<?php bloginfo('template_directory');?>/images/thing1.png" alt="thing1" />
-						<p class="home-copy">Orita consequi reseditam, si vendus eaquia digenimpe venimil ipsam, custemp oremoluptame non plac</p>
+					<div class="large-4 medium-4 small-12 columns col_1">
+						<h3><?php the_field('col_1_title'); ?></h3>
+						<p class="home-copy"><?php the_field('col_1_description'); ?></p>
 					</div>
-					<div class="large-4 medium-4 small-12 columns">
-						<h3>Thing 2</h3>
-						<img src="<?php bloginfo('template_directory');?>/images/thing2.png" alt="thing2" />
-						<p class="home-copy">Orita consequi reseditam, si vendus eaquia digenimpe venimil ipsam, custemp oremoluptame non plac</p>
+					<div class="large-4 medium-4 small-12 columns col_2">
+						<h3><?php the_field('col_2_title'); ?></h3>
+						<p class="home-copy"><?php the_field('col_2_description'); ?></p>
 					</div>
-					<div class="large-4 medium-4 small-12 columns">
-						<h3>Thing 3</h3>
-						<img src="<?php bloginfo('template_directory');?>/images/thing3.png" alt="thing3" />
-						<p class="home-copy">Orita consequi reseditam, si vendus eaquia digenimpe venimil ipsam, custemp oremoluptame non plac</p>
+					<div class="large-4 medium-4 small-12 columns col_3">
+						<h3><?php the_field('col_3_title'); ?></h3>
+						<p class="home-copy"><?php the_field('col_3_description'); ?></p>
 					</div>
 				</div>
-				<a class="lined-button"><span class="button">See Our Work</span></a>
+				<a class="lined-button" href="<?php the_field('what_we_do_button_link'); ?>"><span class="button"><?php the_field('what_we_do_button_text'); ?></span></a>
 			</div>
 		</div>
 	</div>
 	
 <!-- Work -->	
 
-	 <div class=" section work-home page-section">
+	 <div class=" section work-home page-section" style="background-image: url('<?php the_field('work_image'); ?>');">
 		 <div class="row vert-align">
-		 	<div class="large-4 medium-6 small-12 columns">
+		 	<div class="large-12 medium-12 small-9 small-centered columns">
 		 		<h1 class="main-title"><span>The</span>Work</h1>
-		 		<p class="home-copy">Orita consequi reseditam, si vendus eaquia digenimpe venimil ipsam, custemp oremoluptame non placcup tatquodit exereic te ist, solupta que debisque cor ab id qui berrume nimped quiati ipitati orerae ad eatusandam excepud itatur? Quiassinte.</p>
-		 		<a class="lined-button"><span class="button">See More</span></a>
-		 	</div>
-		 	<div class="large-7 medium-6 small-12 columns">
-		 		<img src="<?php bloginfo('template_directory');?>/images/video1.png" alt="video1" />
+		 		<p class="home-copy"><?php the_field('work_description'); ?></p>
+		 		<a class="lined-button"><span class="button"><?php the_field('work_button_text'); ?></span></a>
 		 	</div>
 		 </div>
 	 </div>
 	 
 <!-- Contact -->	 
 
-	<div class="section contact-home page-section">
-	
-<!-- Social -->	
+	<div class="section contact-home page-section light">
+		<div class="vert-align">
 
-		<div class="social-home">
-			<div class="row">
-				<div class="large-12 medium-12 small-12 columns">
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/fb.png" alt="fb" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/tw.png" alt="tw" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/ig.png" alt="ig" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/pn.png" alt="pn" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/fr.png" alt="fr" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/gp.png" alt="gp" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/li.png" alt="li" /></a>
-					<a><img src="<?php bloginfo('template_directory');?>/images/social/yt.png" alt="yt" /></a>
+		
+		<!-- Form -->	
+		
+			<div class="form-home">
+				<div class="row">
+					<div class="large-12 medium-12 small-9 small-centered columns">
+						<h1 class="main-title"><?php the_field('contact_title'); ?></h1>
+						<p class="subtitle"><span class="left-line"></span><?php the_field('contact_subtitle'); ?><span class="right-line"></span></p>
+					</div>
+					<div class="large-8 large-centered medium-8 medium-centered small-9 small-centered columns">
+						<?php the_field('contact_form'); ?>
+					</div>
 				</div>
-			</div>
-		</div>
+			</div>	
+			<div class="bottom-home">
+			<!-- Map -->		
+					
+				<div class="map-home">
+					<!-- <img src="<?php bloginfo('template_directory');?>/images/sm-map.jpg" alt="sm-map" /> -->
+					<div id="view1">
+					<?php
+					$location = get_field('sm_map');
+					if( ! empty($location) ):
+					?>
+					<div id="map" style="width: 100%; height: 350px;"></div>
+					<script src='http://maps.googleapis.com/maps/api/js?sensor=false' type='text/javascript'></script>
+					
+					<script type="text/javascript">
+					  //<![CDATA[
+						function load() {
+						var lat = <?php echo $location['lat']; ?>;
+						var lng = <?php echo $location['lng']; ?>;
+					// coordinates to latLng
+						var latlng = new google.maps.LatLng(lat, lng);
+						var mapStyles = [
+						  {
+						    "stylers": [
+						      { "saturation": -100 },
+						      { "lightness": -51 },
+						      { "gamma": 0.67 }
+						    ]
+						  }
+						];
+					// map Options
+						var myOptions = {
+						zoom: 18,
+						center: latlng,
+						mapTypeId: google.maps.MapTypeId.ROADMAP, 
+						styles: mapStyles,
+						zoomControl: false,
+						scaleControl: false,
+						scrollwheel: false,
+						panControl: false,
+					    streetViewControl: false,
+						disableDoubleClickZoom: true,
+						draggable: false
+					   };
 
-<!-- Form -->	
-
-		<div class="form-home">
-			<div class="row vert-align">
-				<div class="large-12 medium-12 small-12 columns">
-					<h1 class="main-title">Contact</h1>
-					<p class="subtitle">Drop us a line</p>
+					//draw a map
+						var map = new google.maps.Map(document.getElementById("map"), myOptions);
+						var iconBase = 'http://fbdev.somethingmassive.com/smdev/wp-content/themes/somethingmassive2014/images/';
+						var marker = new google.maps.Marker({
+						position: map.getCenter(),
+						map: map,
+						icon: iconBase + 'sm-marker.png'
+					   });
+					}
+					// call the function
+					   load();
+					//]]>
+					</script>
+					<?php endif; ?> 
+					
+					</div>
 				</div>
-				<div class="large-8 large-centered medium-8 medium-centered small-12 columns">
-					<form action="" method="" accept-charset="utf-8" data-abide>
+						
+				<!-- Details -->	
+				
+				<div class="details-home">
+					<div class="large-7 large-centered medium-7 medium-centered small-9 small-centered columns">
 						<div class="row">
 							<div class="large-6 medium-6 small-12 columns">
-								<div class="name-field">
-									<input type="text" required pattern="[a-zA-Z]+" placeholder="Full Name">
-								</div>
+								<img src="<?php bloginfo('template_directory');?>/images/map.png" alt="map" />
+								<h2>Address</h2>
+								<p><?php the_field('address'); ?></p>
 							</div>
 							<div class="large-6 medium-6 small-12 columns">
-								<div class="name-field">
-									<input type="email" placeholder="Email" required>
-								</div>
-							</div>
-							<div class="large-6 medium-6 small-12 columns">
-								<div class="name-field">
-									<input type="text"  placeholder="Phone (optional)" id="phone">
-								</div>
-							</div>
-							<div class="large-6 medium-6 small-12 columns">	
-								<div class="name-field">
-									<input type="text"  placeholder="Company" id="company">
-								</div>
-							</div>
-							<div class="large-12 medium-12 small-12 columns">
-								<div class="name-field">
-									<textarea placeholder="Leave A Message"></textarea>
-								</div>
+								<img src="<?php bloginfo('template_directory');?>/images/phone.png" alt="phone" />
+								<h2>Phone/Email</h2>
+								<p><a href="tel:<?php the_field('phone_number'); ?>" style="color: #ffffff;"><?php the_field('phone_number'); ?></a></p>
+								<p><a class="show-for-small-only" href="mailto:<?php the_field('email_address'); ?>" style="color: #ffffff;">Email Us</a></p>
+								<p><a class="show-for-medium-up" href="mailto:<?php the_field('email_address'); ?>" style="color: #ffffff;"><?php the_field('email_address'); ?></a></p>
 							</div>
 						</div>
-						<a class="lined-button"><button class="button" type="submit">Submit</button></a>
-					</form>
+					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-	<div class="section bottom-home page-section">
-<!-- Map -->		
-		
-		<div class="map-home">
-			<img src="<?php bloginfo('template_directory');?>/images/sm-map.jpg" alt="sm-map" />
+				
 		</div>
-		
-<!-- Details -->	
+	</div>
+	
+	
+</div>
 
-		<div class="details-home">
-			<div class="large-7 large-centered medium-7 medium-centered small-12 columns">
-				<div class="row">
-					<div class="large-6 medium-6 small-12 columns">
-						<img src="<?php bloginfo('template_directory');?>/images/map.png" alt="map" />
-						<h2>Address</h2>
-						<p>6030 Wilshire Blvd, Suite 301</p>
-						<p>Los Angeles 90036</p>
-					</div>
-					<div class="large-6 medium-6 small-12 columns">
-						<img src="<?php bloginfo('template_directory');?>/images/phone.png" alt="phone" />
-						<h2>Phone/Email</h2>
-						<p>310.302.8900</p>
-						<p>LA@Somethingmassive.com</p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	
-	
-	
-</div>	
 <?php get_footer(); ?>

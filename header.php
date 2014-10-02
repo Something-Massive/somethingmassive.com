@@ -9,6 +9,26 @@
 		<meta charset="utf-8">
 
 		<title><?php wp_title(''); ?></title>
+		
+		<!-- site meta -->
+		<meta name="title" content="" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		
+		<meta name="twitter:title" content="" />
+		<meta name="twitter:description" content="" />
+		<meta name="twitter:site" content="" />
+		<meta name="twitter:url" content="" />
+		<meta name="twitter:creator" content="" />
+		<meta name="twitter:image" content="" />
+		
+		<meta name="og:title" content="" />
+		<meta name="og:description" content="" />
+		<meta property="og:url" content="http://somethingmassive.com/" />
+		<meta name="og:site_name" content="" />
+		<meta property="og:image" content="" />
+		<meta property="og:type" content="website" />
+		<meta property="fb:app_id" content="" />
 
 		<!-- Google Chrome Frame for IE -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -31,27 +51,21 @@
 	  	
 	  	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/structure.css">
 	  	<link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri() ?>/css/fonts/fonts.css" type="text/css" charset="utf-8" />
+	  	<link rel="stylesheet" type="text/css" href="<?php bloginfo('template_directory');?>/js/jcarousel.responsive.css">
+
+        <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.jcarousel.js"></script>
+        <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jcarousel.responsive.js"></script>
 
 	  	
 	  	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-<!-- 	  	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> -->
-
-	  	<!--
-<script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.fullPage.js"></script>
-	  		<script type="text/javascript">
-		
-			$(document).ready(function() {
-			$('#fullscreen').fullpage();
-			});
-		</script>
--->
-		
-	  	<script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/scripts.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script> 
+        
+        <!-- <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.slimscroll.min.js"></script> -->
+       <!--  <script type="text/javascript" src="<?php bloginfo('template_directory');?>/js/jquery.fullPage.js"></script> -->
+        <script type="text/javascript" src="<?php echo get_stylesheet_directory_uri() ?>/js/scripts.js"></script>
 	  	
 	  	<script type="text/javascript" src="//use.typekit.net/hoj6fxg.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-		
 		
 		<?php wp_head(); ?>
 		
@@ -67,11 +81,27 @@
 			<div id="container">
 	
 				<header class="header" role="banner">
-					<a class="sm-logo"><img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="logo" /></a>
+					<a class="sm-logo" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php bloginfo('template_directory');?>/images/logo.png" alt="logo" /></a>
 					<h4 class="nav-icon"><img src="<?php bloginfo('template_directory');?>/images/nav-icon.png" alt="nav-icon" /></h4>
 					<div id="inner-header" >
 						<nav class="naver reset" data-naver-options='{"maxWidth":"2560px"}'>
 							<?php wp_nav_menu( array( 'theme_location' => 'main-nav' ) ); ?>
+							<ul class="social-header">
+								<?php
+								/*
+								*  Loop through a Repeater field
+								*/
+								 
+								if( get_field('header_social_links', 'option') ): ?>
+								 
+									<?php while( has_sub_field('header_social_links', 'option') ): ?>
+										<li>
+											<a href="<?php the_sub_field('url'); ?>" target="_blank" ><img src="<?php the_sub_field('image'); ?>" alt="<?php the_sub_field('site_name'); ?>" /></a>
+										</li>
+									<?php endwhile; ?>
+								 
+								<?php endif; ?>
+							</ul>
 						</nav>
 						
 						 <?php  //get_template_part( 'partials/nav', 'offcanvas' ); ?> 
@@ -86,3 +116,4 @@
 					</div> <!-- end #inner-header -->
 	
 				</header> <!-- end header -->
+	<div id="fullpage">
